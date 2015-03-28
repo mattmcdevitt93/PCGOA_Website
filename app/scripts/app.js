@@ -25,7 +25,15 @@ angular
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'MainCtrl'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'MaintCtrl'
+      })
+      .when('/login_create', {
+        templateUrl: 'views/login_create.html',
+        controller: 'LoginCtrl'
       })
       .otherwise({
         redirectTo: '/main'

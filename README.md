@@ -1,4 +1,4 @@
-# Space_charts
+# PCGOA website
 
 DEPLOY 101:
 
@@ -13,4 +13,4 @@ git subtree push --prefix dist origin gh-pages
 
 
 
-http://mattmcdevitt93.github.io/Space_charts/#/main
+http://mattmcdevitt93.github.io/PCGOA_Website/#/main

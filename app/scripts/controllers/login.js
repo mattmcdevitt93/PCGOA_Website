@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name spaceChartsApp.controller:AboutCtrl
+ * @name spaceChartsApp.controller:LoginCtrl
  * @description
- * # AboutCtrl
+ * # LoginCtrl
  * Controller of the spaceChartsApp
  */
 angular.module('spaceChartsApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('LoginCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
