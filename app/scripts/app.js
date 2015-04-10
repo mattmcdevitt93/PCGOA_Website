@@ -27,13 +27,9 @@ angular
         templateUrl: 'views/about.html',
         controller: 'MainCtrl'
       })
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
-        controller: 'MaintCtrl'
-      })
-      .when('/login_create', {
-        templateUrl: 'views/login_create.html',
-        controller: 'LoginCtrl'
+      .when('/account', {
+        templateUrl: 'views/account.html',
+        controller: 'MainCtrl'
       })
       .when('/admin', {
         templateUrl: 'views/admin.html',

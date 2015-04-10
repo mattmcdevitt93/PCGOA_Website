@@ -18,6 +18,10 @@ div {
   z-index: 100;
 }
 
+.field {
+  color: black;
+}
+
 .logo {
   height: 100px;
   width: 200px;

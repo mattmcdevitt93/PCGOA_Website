@@ -27,15 +27,17 @@
         
           <a class="btn btn-primary" ng-href="#/main">Home</a>
           <a class="btn btn-primary" ng-href="#/about">About</a>
-          <a class="btn btn-primary" ng-href="#/contact">Contact</a>
-
           <a class="btn btn-warning" ng-href="#/admin">Admin</a>
+
           <span id="current_user">Currently Logged in as:</span>
-          <input type="text" name="username" id="user_email" placeholder="E-mail">
-          <input type="text" name="password" id="user_pw" placeholder="Password">
-          <button class="btn btn-primary">Login</button>
-          <a ng-href="#/login_create"><button class="btn btn-primary">Create Account</button></a>
-          <button class="btn btn-primary">Logout</button>
+          <input type="text" class='field' name='username' id="user_email" placeholder="E-mail">
+          <input type="text" class='field' name='password' id="user_pw" placeholder="Password">
+          <button class="btn btn-primary loginBtn" id='login' onclick="Module.loginUser()">Login</button>
+          <button class="btn btn-primary loginBtn" id='logout' onclick="Module.logout()">Logout</button>
+          <button class="btn btn-primary" onclick="Module.createUser()">New User</button>
+          <button class="btn btn-primary" onclick="">check</button>
+
+          <!-- <a ng-href="#/account"><button class="btn btn-primary">Account Info</button></a> -->
 
         </div>
     </div>
@@ -68,9 +70,8 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
     <!-- endbower -->
-     <script src="bower_components/firebase/firebase.js"></script>
-
     <!-- endbuild -->
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/main.js"></script>
@@ -80,7 +81,6 @@
         <script src="scripts/cookie.js"></script>
 
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/login.js"></script>
 
          <!-- endbuild -->
 </body>

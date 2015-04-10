@@ -2,19 +2,23 @@
 
 var Module = Module || {};
 var Firebase = Firebase || {};
-var ref = 'https://pcgoa-streaming.firebaseio.com/';
 
 $( document ).ready(function() {
     console.log('ready!');
+    var ref = 'https://pcgoa-streaming.firebaseio.com/';
     Module.Firebase = new Firebase(ref);
-    Module.Firebase.set('hello world! 5');
+    Module.Firebase.set('hello world! 6');
     Module.headerBuffer();
-    Module.loadLogin();
 });
 
 $( document ).scroll(function() {
   Module.zoomDetect();
 });
+
+Module.loginButton = function () {
+  var loginBtn = document.getElementsByClassName('loginBtn');
+  console.log(loginBtn);
+};
 
 Module.headerBuffer = function () {
 	var padding = $('.header').height() + 10;

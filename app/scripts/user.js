@@ -3,15 +3,12 @@
 var Module = Module || {};
 var Cookie = Cookie || {};
 
-Module.loadLogin = function () {
-  document.getElementById('login');
-};
-
 Module.createUser = function () {
   console.log('create account');
   var ref = Module.Firebase;
   var username = document.getElementById('user_email').value;
   var password = document.getElementById('user_pw').value;
+  console.log(username, password);
   ref.createUser({
     email    : username,
     password : password
@@ -36,7 +33,9 @@ Module.loginUser = function () {
       console.log('Login Failed!', error);
     } else {
       console.log('Authenticated successfully with payload:', authData);
+      Cookie.generateName();
       document.getElementById('user_email').value = '';
+
     }
     document.getElementById('user_pw').value = '';
   });
@@ -57,8 +56,8 @@ Module.recoverEmail = function () {
   });
 };
 
-Module.verifiedUser = function () {
-  var isnum = /^\d+$/.test(Cookie.getCookie('User'));
-  // console.log(isnum);
-  return isnum;
+Module.logout = function () {
+  console.log('logout');
+  var ref = Module.Firebase;
+  ref.unauth();
 };
