@@ -21,6 +21,7 @@ Cookie.deleteCookie = function(name) {
 
 Cookie.generateName = function() {
   // console.log(User.authData)
+  // Pulls the Email address out of firebase authData and strips away the provider.
   if (Module.authData) {
     console.log('if');
     var login = Module.authData.password.email;

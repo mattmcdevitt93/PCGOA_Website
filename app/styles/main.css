@@ -3,9 +3,9 @@ body {
   padding-bottom: 20px;
 }
 
-div {
+/*div {
     border: 1px solid black;
-}
+}*/
 /*-------------------------*/
 
 /* Custom page header */
@@ -18,17 +18,23 @@ div {
   z-index: 100;
 }
 
-.field {
-  color: black;
+.navBar {
+  padding: 10px;
+}
+
+.navLink {
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  margin: 5px;
 }
 
 .logo {
   height: 100px;
   width: 200px;
-}
-
-.login {
-    float: right;
+  padding: 25px;
 }
 
 /* Custom page footer */
